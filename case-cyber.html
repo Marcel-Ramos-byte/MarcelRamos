@@ -203,7 +203,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     </div>
 
     <div class="info-box">
-      <strong>Observacao:</strong> A conexao entre Campus e Escritorio foi implementada via WAN (172.16.0.0/30) com roteamento estatico. Foram configuradas politicas IPSec nos switches Layer 3, porem devido a limitacoes do Packet Tracer na aplicacao de crypto maps em interfaces, a VPN opera como conexao WAN segura via roteamento estatico. Em ambiente de producao real, esta configuracao funcionaria com tunel IPSec ativo.
+      <strong>Observacao:</strong> A conexao entre Campus e Escritorio foi implementada via WAN (172.16.0.0/30) com roteamento estatico. Foram configuradas politicas IPSec nos switches Layer 3, porem não sei se devido a limitacoes do Packet Tracer na aplicacao de crypto maps em interfaces ou falta de conhecimento da minha parte, a VPN opera como conexao WAN via roteamento estatico. Em ambiente de producao real, esta configuracao funcionaria com tunel IPSec ativo.
     </div>
   </section>
 
@@ -238,7 +238,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     </div>
 
     <div class="screenshot">
-      <img src="cyber/secao3/deptapc-ping192168301i-102011010.png" alt="Ping entre VLANs academicas">
+      <img src="cyber/secao3/deptapc-ping1921683011-102011010.png" alt="Ping entre VLANs academicas">
       <p>Figura 11: Comunicacao entre VLANs academicas funcionando</p>
     </div>
 
@@ -381,28 +381,28 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
       <li>Comunicacao Campus-Escritorio validada via testes</li>
     </ul>
 
-    <h3 class="mt-2">Limitacoes do Packet Tracer Identificadas</h3>
+    <h3 class="mt-2">Dificuldades que encontrei e não consegui implementar no Packet Tracer</h3>
     <div class="warning-box">
       <strong>Observacoes Tecnicas:</strong><br><br>
-      1. <strong>ACLs em Switches 3650:</strong> Comandos de ACL sao aceitos na configuracao, mas nao bloqueiam trafego conforme esperado. Em producao real funcionariam corretamente.<br><br>
-      2. <strong>Crypto Maps:</strong> Politicas IPSec podem ser configuradas, mas nao podem ser aplicadas em interfaces de switches no PT. Solucao: roteamento estatico via WAN.<br><br>
+      1. <strong>ACLs em Switches 3650:</strong> Comandos de ACL sao aceitos na configuracao, mas nao bloqueiam trafego conforme esperado.<br><br>
+      2. <strong>Crypto Maps:</strong> Politicas IPSec podem ser configuradas, mas nao podem ser aplicadas em interfaces de switches no Packet Tracer. Solucao: roteamento estatico via WAN.<br><br>
       3. <strong>DHCP Gateway:</strong> Em alguns casos, o DHCP entrega gateway incorreto. Solucao: configuracao de IP estatico quando necessario.<br><br>
-      <em>Importante: Estas limitacoes sao exclusivas do simulador e nao refletem o comportamento de equipamentos Cisco reais.</em>
+      <em>Importante: Estas limitacoes sao exclusivas da minha tentativa em seguir o escopo do desafio no simulador e nao refletem o comportamento de equipamentos Cisco reais.</em>
     </div>
 
     <h3 class="mt-2">Principais Aprendizados</h3>
     <p>Este projeto consolidou conhecimentos em:</p>
     <ul class="list-tight mt-1">
-      <li><strong>Segmentacao de rede:</strong> Uso de VLANs para isolar trafego e criar politicas de seguranca</li>
-      <li><strong>Roteamento:</strong> Implementacao de roteamento inter-VLAN em switches L3 e roteamento estatico entre sites</li>
+      <li><strong>Segmentacao de rede:</strong> Uso de VLANs para isolar trafego e criar politicas de segurança</li>
+      <li><strong>Roteamento:</strong> Implementaçao de roteamento inter-VLAN em switches L3 e roteamento estatico entre sites</li>
       <li><strong>Servicos essenciais:</strong> Configuracao de DHCP, HTTP, FTP em ambiente corporativo</li>
-      <li><strong>Conectividade sem fio:</strong> Implementacao de Wi-Fi com autenticacao WPA2</li>
-      <li><strong>Troubleshooting:</strong> Diagnostico e resolucao de problemas de conectividade</li>
-      <li><strong>Documentacao tecnica:</strong> Importancia de registrar configuracoes e testes realizados</li>
+      <li><strong>Conectividade sem fio:</strong> Implementaçao de Wi-Fi com autenticaçao WPA2</li>
+      <li><strong>Troubleshooting:</strong> Diagnostico e resoluçao de problemas de conectividade</li>
+      <li><strong>Documentacao tecnica:</strong> Importancia de registrar configuraçoes e testes realizados</li>
     </ul>
 
     <div class="success-box mt-2">
-      <strong>Resultado Final:</strong> Todos os requisitos do desafio foram implementados e validados com sucesso. O projeto esta pronto para apresentacao e demonstra competencia em design, implementacao e troubleshooting de redes corporativas.
+      <strong>Resultado Final:</strong> Acredito que todos os requisitos do desafio foram implementados e validados com sucesso. O projeto esta pronto e demonstra competencia em design, implementacao e troubleshooting de redes corporativas.
     </div>
   </section>
 
@@ -450,7 +450,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
       </tr>
     </table>
 
-    <h3>Comandos de Verificacao - Roteadores</h3>
+    <h3>Comandos de Verificaçao - Roteadores</h3>
     <table>
       <tr>
         <th>Comando</th>
@@ -583,10 +583,10 @@ copy running-config startup-config</pre>
 
 <footer>
   <div class="container">
-    <p><strong>Projeto Academico - Redes de Computadores e Ciberseguranca</strong></p>
+    <p><strong>Projeto - Desafio Redes de Computadores e Cibersegurança</strong></p>
     <p class="mt-1">Desenvolvido como parte dos estudos praticos em infraestrutura de redes.</p>
     <p class="mt-1 small muted">Cisco Packet Tracer | VLANs | Roteamento | VPN | DHCP | Servicos de Rede</p>
-    <p class="mt-1 small muted">© 2026 - Documentacao tecnica para fins educacionais</p>
+    <p class="mt-1 small muted">© 2026 - Documentaçao tecnica para fins educacionais</p>
   </div>
 </footer>
 <script defer src="app.js"></script>
