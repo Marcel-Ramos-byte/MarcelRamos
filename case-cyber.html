@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Case Study: Integracao de Rede Corporativa e Academica</title>
+  <title>Case Study: Integração de Rede Corporativa e Academica</title>
   <meta name="description" content="Case study de infraestrutura hibrida no Cisco Packet Tracer com VLANs, roteamento, VPN e servicos essenciais.">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -28,8 +28,8 @@
 <main id="conteudo" class="container case-study">
   <section class="hero">
     <span class="kicker">Case Study</span>
-    <h2>Integracao de Rede Corporativa e Academica</h2>
-    <p class="lead">Implementacao completa no Cisco Packet Tracer com VLANs, roteamento, VPN, Wi-Fi, DHCP e validacao de conectividade.</p>
+    <h2>Integração de Rede Corporativa e Academica</h2>
+    <p class="lead">Implementação completa no Cisco Packet Tracer com VLANs, roteamento, VPN, Wi-Fi, DHCP e validação de conectividade.</p>
     <div>
       <a class="button" href="index.html">Voltar para a pagina principal</a>
     </div>
@@ -37,13 +37,13 @@
 
   <section class="panel intro">
     <h2>Contexto do Projeto</h2>
-    <p>Durante minha trajetoria de estudos no grupo de ciberseguranca da faculdade, um colega propos um desafio interessante: aplicar nossos conhecimentos teoricos em redes de computadores atraves de um projeto pratico completo. A ideia era simular um cenario real de integracao entre um ambiente universitario e corporativo, utilizando o Cisco Packet Tracer.</p>
-    <p class="mt-1">Aceitei o desafio com entusiasmo, pois seria uma excelente oportunidade para consolidar conceitos de VLANs, roteamento, VPN, seguranca de rede e servicos essenciais. Este case study documenta todo o processo de implementacao, desde o planejamento ate os testes finais de validacao.</p>
+    <p>Durante minha trajetoria de estudos no grupo de ciberseguranca da faculdade, um colega propos um desafio interessante: aplicar nossos conhecimentos teoricos em redes de computadores atraves de um projeto pratico completo. A ideia era simular um cenario real de integração entre um ambiente universitario e corporativo, utilizando o Cisco Packet Tracer.</p>
+    <p class="mt-1">Aceitei o desafio com entusiasmo, pois seria uma excelente oportunidade para consolidar conceitos de VLANs, roteamento, VPN, seguranca de rede e servicos essenciais. Este case study documenta todo o processo de implementação, desde o planejamento ate os testes finais de validação.</p>
   </section>
 
   <section class="panel challenge-box">
     <h2>Enunciado do Desafio</h2>
-    <p><strong>Objetivo Geral:</strong> Desenvolver, no Cisco Packet Tracer, uma infraestrutura de rede hibrida que represente a integracao entre um ambiente universitario e corporativo, utilizando conceitos avancados de VLANs, roteamento, VPN, conectividade sem fio, DHCP, enderecamento estatico e servicos de rede.</p>
+    <p><strong>Objetivo Geral:</strong> Desenvolver, no Cisco Packet Tracer, uma infraestrutura de rede hibrida que represente a integração entre um ambiente universitario e corporativo, utilizando conceitos avancados de VLANs, roteamento, VPN, conectividade sem fio, DHCP, enderecamento estatico e servicos de rede.</p>
 
     <h3 class="mt-2 text-warning">Requisitos Principais</h3>
     <ul class="list-tight mt-1">
@@ -72,7 +72,7 @@
         <th>Local</th>
         <th>Equipamento</th>
         <th>Modelo</th>
-        <th>Funcao</th>
+        <th>Função</th>
       </tr>
       <tr>
         <td>Campus</td>
@@ -84,7 +84,7 @@
         <td>Campus</td>
         <td>Switch L2</td>
         <td>Catalyst 2960-24TT</td>
-        <td>Distribuicao de VLANs</td>
+        <td>Distribuição de VLANs</td>
       </tr>
       <tr>
         <td>Campus</td>
@@ -108,7 +108,7 @@
         <td>Escritorio</td>
         <td>Switch L2</td>
         <td>Catalyst 2960</td>
-        <td>Distribuicao de VLANs</td>
+        <td>Distribuição de VLANs</td>
       </tr>
       <tr>
         <td>Escritorio</td>
@@ -134,7 +134,7 @@
 
     <div class="screenshot">
       <img src="cyber/secao1/campusl3-showvlanbrief.png" alt="VLANs do Campus">
-      <p>Figura 2: Configuracao de VLANs no Switch Campus L3</p>
+      <p>Figura 2: Configuração de VLANs no Switch Campus L3</p>
     </div>
 
     <div class="command-title">Office-L3: show vlan brief</div>
@@ -150,7 +150,7 @@
 
     <div class="screenshot">
       <img src="cyber/secao1/officel3-showvlanbrief.png" alt="VLANs do Escritorio">
-      <p>Figura 3: Configuracao de VLANs no Switch Office L3</p>
+      <p>Figura 3: Configuração de VLANs no Switch Office L3</p>
     </div>
   </section>
 
@@ -203,7 +203,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     </div>
 
     <div class="info-box">
-      <strong>Observacao:</strong> A conexao entre Campus e Escritorio foi implementada via WAN (172.16.0.0/30) com roteamento estatico. Foram configuradas politicas IPSec nos switches Layer 3, porem não sei se devido a limitacoes do Packet Tracer na aplicacao de crypto maps em interfaces ou falta de conhecimento da minha parte, a VPN opera como conexao WAN via roteamento estatico. Em ambiente de producao real, esta configuracao funcionaria com tunel IPSec ativo.
+      <strong>Observação:</strong> A conexao entre Campus e Escritorio foi implementada via WAN (172.16.0.0/30) com roteamento estatico. Foram configuradas politicas IPSec nos switches Layer 3, porem não sei se devido a limitações do Packet Tracer na aplicação de crypto maps em interfaces ou falta de conhecimento da minha parte, a VPN opera como conexao WAN via roteamento estatico. Em ambiente de produção real, esta configuração funcionaria com tunel IPSec ativo.
     </div>
   </section>
 
@@ -216,7 +216,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     <div class="command-title">ADMIN-PC: Testes de ping</div>
     <div class="screenshot">
       <img src="cyber/secao3/adminpc-ipconfig.png" alt="IP do ADMIN-PC">
-      <p>Figura 8: Configuracao IP do PC Administrativo</p>
+      <p>Figura 8: Configuração IP do PC Administrativo</p>
     </div>
 
     <div class="screenshot">
@@ -234,16 +234,16 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     <div class="command-title">DEPTA-PC: Ping para VLAN 30</div>
     <div class="screenshot">
       <img src="cyber/secao3/deptapc-ipconfig.png" alt="IP DEPTA-PC">
-      <p>Figura 10: Configuracao IP do DEPTA-PC (VLAN 20)</p>
+      <p>Figura 10: Configuração IP do DEPTA-PC (VLAN 20)</p>
     </div>
 
     <div class="screenshot">
       <img src="cyber/secao3/deptapc-ping1921683011-102011010.png" alt="Ping entre VLANs academicas">
-      <p>Figura 11: Comunicacao entre VLANs academicas funcionando</p>
+      <p>Figura 11: Comunicação entre VLANs academicas funcionando</p>
     </div>
 
     <div class="success-box">
-      ✓ <strong>Resultado:</strong> Comunicacao entre VLANs academicas confirmada.
+      ✓ <strong>Resultado:</strong> Comunicação entre VLANs academicas confirmada.
     </div>
 
     <h3 class="mt-2">Teste 3: Acesso via VPN aos Servidores do Escritorio</h3>
@@ -261,16 +261,16 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     </div>
 
     <div class="success-box">
-      ✓ <strong>Resultado:</strong> Comunicacao Campus-Escritorio via WAN funcionando. Politicas de acesso implementadas corretamente.
+      ✓ <strong>Resultado:</strong> Comunicação Campus-Escritorio via WAN funcionando. Politicas de acesso implementadas corretamente.
     </div>
   </section>
 
   <section class="panel">
-    <h2>4. DHCP - Atribuicao Automatica de IPs</h2>
+    <h2>4. DHCP - Atribuição Automatica de IPs</h2>
 
     <p>Requisito: Implementar DHCP em determinadas VLANs, com IPs estaticos para servidores e dispositivos de gerenciamento.</p>
 
-    <h3>Configuracao dos Pools DHCP</h3>
+    <h3>Configuração dos Pools DHCP</h3>
     <div class="command-title">Campus-L3: show ip dhcp pool</div>
     <div class="screenshot">
       <img src="cyber/secao4/campusl3-showipdhcppool.png" alt="DHCP Pools">
@@ -284,7 +284,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     </div>
 
     <div class="info-box">
-      <strong>Configuracao aplicada:</strong><br>
+      <strong>Configuração aplicada:</strong><br>
       - VLANs 20, 30, 40: DHCP habilitado<br>
       - VLAN 10: IPs estaticos (administrativa)<br>
       - Servidores: IPs estaticos<br>
@@ -340,14 +340,14 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
 
     <p>Requisito: Disponibilizar rede sem fio em uma VLAN academica, permitindo conexao de dispositivos moveis.</p>
 
-    <h3>Configuracao do Access Point</h3>
+    <h3>Configuração do Access Point</h3>
     <div class="screenshot">
       <img src="cyber/secao6/campusap-ssidwpa2.png" alt="Config Access Point">
       <p>Figura 21: Access Point configurado com SSID "CAMPUS-DEPTA", WPA2-PSK, senha "campus123"</p>
     </div>
 
     <div class="info-box">
-      <strong>Configuracao Wi-Fi:</strong><br>
+      <strong>Configuração Wi-Fi:</strong><br>
       - SSID: CAMPUS-DEPTA<br>
       - Seguranca: WPA2-PSK<br>
       - Senha: campus123<br>
@@ -358,7 +358,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     <h3>Teste de Conectividade</h3>
     <div class="screenshot">
       <img src="cyber/secao6/tablet-config.png" alt="Tablet conectado">
-      <p>Figura 22: Tablet conectado a rede Wi-Fi (IP estatico configurado devido limitacao do DHCP no PT)</p>
+      <p>Figura 22: Tablet conectado a rede Wi-Fi (IP estatico configurado devido limitação do DHCP no PT)</p>
     </div>
 
     <div class="success-box">
@@ -378,31 +378,31 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
       <li>DHCP configurado nas VLANs academicas (20, 30, 40)</li>
       <li>Servicos HTTP e FTP ativos e acessiveis nos servidores</li>
       <li>Wi-Fi operacional com WPA2-PSK na VLAN 20</li>
-      <li>Comunicacao Campus-Escritorio validada via testes</li>
+      <li>Comunicação Campus-Escritorio validada via testes</li>
     </ul>
 
     <h3 class="mt-2">Dificuldades que encontrei e não consegui implementar no Packet Tracer</h3>
     <div class="warning-box">
-      <strong>Observacoes Tecnicas:</strong><br><br>
-      1. <strong>ACLs em Switches 3650:</strong> Comandos de ACL sao aceitos na configuracao, mas nao bloqueiam trafego conforme esperado.<br><br>
-      2. <strong>Crypto Maps:</strong> Politicas IPSec podem ser configuradas, mas nao podem ser aplicadas em interfaces de switches no Packet Tracer. Solucao: roteamento estatico via WAN.<br><br>
-      3. <strong>DHCP Gateway:</strong> Em alguns casos, o DHCP entrega gateway incorreto. Solucao: configuracao de IP estatico quando necessario.<br><br>
-      <em>Importante: Estas limitacoes sao exclusivas da minha tentativa em seguir o escopo do desafio no simulador e nao refletem o comportamento de equipamentos Cisco reais.</em>
+      <strong>Observações Tecnicas:</strong><br><br>
+      1. <strong>ACLs em Switches 3650:</strong> Comandos de ACL sao aceitos na configuração, mas nao bloqueiam trafego conforme esperado.<br><br>
+      2. <strong>Crypto Maps:</strong> Politicas IPSec podem ser configuradas, mas nao podem ser aplicadas em interfaces de switches no Packet Tracer. Solução: roteamento estatico via WAN.<br><br>
+      3. <strong>DHCP Gateway:</strong> Em alguns casos, o DHCP entrega gateway incorreto. Solução: configuração de IP estatico quando necessario.<br><br>
+      <em>Importante: Estas limitações sao exclusivas da minha tentativa em seguir o escopo do desafio no simulador e nao refletem o comportamento de equipamentos Cisco reais.</em>
     </div>
 
     <h3 class="mt-2">Principais Aprendizados</h3>
     <p>Este projeto consolidou conhecimentos em:</p>
     <ul class="list-tight mt-1">
-      <li><strong>Segmentacao de rede:</strong> Uso de VLANs para isolar trafego e criar politicas de segurança</li>
+      <li><strong>Segmentação de rede:</strong> Uso de VLANs para isolar trafego e criar politicas de segurança</li>
       <li><strong>Roteamento:</strong> Implementaçao de roteamento inter-VLAN em switches L3 e roteamento estatico entre sites</li>
-      <li><strong>Servicos essenciais:</strong> Configuracao de DHCP, HTTP, FTP em ambiente corporativo</li>
+      <li><strong>Servicos essenciais:</strong> Configuração de DHCP, HTTP, FTP em ambiente corporativo</li>
       <li><strong>Conectividade sem fio:</strong> Implementaçao de Wi-Fi com autenticaçao WPA2</li>
       <li><strong>Troubleshooting:</strong> Diagnostico e resoluçao de problemas de conectividade</li>
-      <li><strong>Documentacao tecnica:</strong> Importancia de registrar configuraçoes e testes realizados</li>
+      <li><strong>Documentação tecnica:</strong> Importancia de registrar configuraçoes e testes realizados</li>
     </ul>
 
     <div class="success-box mt-2">
-      <strong>Resultado Final:</strong> Acredito que todos os requisitos do desafio foram implementados e validados com sucesso. O projeto esta pronto e demonstra competencia em design, implementacao e troubleshooting de redes corporativas.
+      <strong>Resultado Final:</strong> Acredito que todos os requisitos do desafio foram implementados e validados com sucesso. O projeto esta pronto e demonstra competencia em design, implementação e troubleshooting de redes corporativas.
     </div>
   </section>
 
@@ -410,11 +410,11 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     <h2>Referencia Rapida de Comandos</h2>
     <p>Lista de comandos uteis utilizados neste projeto para consulta futura.</p>
 
-    <h3>Comandos de Verificacao - Switches</h3>
+    <h3>Comandos de Verificação - Switches</h3>
     <table>
       <tr>
         <th>Comando</th>
-        <th>Descricao</th>
+        <th>Descrição</th>
       </tr>
       <tr>
         <td><code>show vlan brief</code></td>
@@ -454,7 +454,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     <table>
       <tr>
         <th>Comando</th>
-        <th>Descricao</th>
+        <th>Descrição</th>
       </tr>
       <tr>
         <td><code>show ip interface brief</code></td>
@@ -474,7 +474,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
       </tr>
       <tr>
         <td><code>show crypto map</code></td>
-        <td>Exibe configuracao de crypto maps</td>
+        <td>Exibe configuração de crypto maps</td>
       </tr>
     </table>
 
@@ -482,11 +482,11 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
     <table>
       <tr>
         <th>Comando</th>
-        <th>Descricao</th>
+        <th>Descrição</th>
       </tr>
       <tr>
         <td><code>ipconfig</code></td>
-        <td>Exibe configuracao de rede do PC</td>
+        <td>Exibe configuração de rede do PC</td>
       </tr>
       <tr>
         <td><code>ipconfig /release</code></td>
@@ -510,7 +510,7 @@ Vlan120                10.20.120.1     YES manual up                    up</pre>
       </tr>
     </table>
 
-    <h3>Configuracoes Basicas</h3>
+    <h3>Configurações Basicas</h3>
     <div class="command-title">Criar VLAN</div>
     <div class="command-box">
       <pre>configure terminal
@@ -572,7 +572,7 @@ ip routing
 exit</pre>
     </div>
 
-    <div class="command-title">Salvar configuracao</div>
+    <div class="command-title">Salvar configuração</div>
     <div class="command-box">
       <pre>write memory
 ou
